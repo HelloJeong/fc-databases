@@ -1,0 +1,31 @@
+{
+  "name": "databases",
+  "version": "1.0.0",
+  "description": "_Fastcampus Node Databases 강의 내용을 정리해둔 자료입니다._",
+  "main": "index.js",
+  "scripts": {
+    "apollo": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/apollo.ts",
+    "cli": "sequelize-cli",
+    "sq": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/sq.ts",
+    "pg:add": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/pg.ts add",
+    "pg:remove": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/pg.ts remove"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.4.0",
+    "commander": "^8.3.0",
+    "graphql": "^15.7.0",
+    "pg": "^8.7.1",
+    "prompts": "^2.4.2",
+    "sequelize": "^6.8.0",
+    "sequelize-cli": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.1",
+    "@types/prompts": "^2.0.14",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0"
+  }
+}
